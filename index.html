@@ -1,18 +1,29 @@
-  let dotprd = 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+let psResult = 0;
   let finalResult;
 function dot_product(vector1, vector2) {
  
   for (let i = 0; i < 2; i++) {
-    dotprd += vector1[i] * vector2[i];
+    psResult += vector1[i] * vector2[i];
   }
-  // return dotprd;
+  // return psResult;
 
-  // if (dotprd == 0){
+  // if (psResult == 0){
   //   console.log('the vector is orthagonal');
   // } else {
-  //   console.log ('the dot product is ' + " ", dotprd)
+  //   console.log ('the dot product is ' + " ", psResult)
   // }
-  return dotprd;
+  return psResult;
 }
 
 function checkOrthagonal(vector1, vector2) {
@@ -26,3 +37,9 @@ function checkOrthagonal(vector1, vector2) {
 }
 
 checkOrthagonal([2, 1], [-1,8])
+  </script>
+</body>
+
+</html>  
+  
+ 
