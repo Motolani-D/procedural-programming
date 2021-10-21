@@ -1,0 +1,28 @@
+  let dotprd = 0;
+  let finalResult;
+function dot_product(vector1, vector2) {
+ 
+  for (let i = 0; i < 2; i++) {
+    dotprd += vector1[i] * vector2[i];
+  }
+  // return dotprd;
+
+  // if (dotprd == 0){
+  //   console.log('the vector is orthagonal');
+  // } else {
+  //   console.log ('the dot product is ' + " ", dotprd)
+  // }
+  return dotprd;
+}
+
+function checkOrthagonal(vector1, vector2) {
+   finalResult = dot_product(vector1, vector2);
+  if (finalResult == 0){
+    console.log('The vectors are perpendicular')
+  } 
+  else{
+    console.log('the dot product is' + " ", finalResult)
+  }
+}
+
+checkOrthagonal([2, 1], [-1,8])
